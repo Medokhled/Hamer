@@ -16,7 +16,7 @@ import tenacity
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-bot = Bot(token='8099858988:AAENEZQHTf46LZa1kO0tgmt_D621ylFJjzk')
+bot = Bot(token='8059528086:AAFIZLlNJzo_nUplHlXzjyShla-DsT0RNYw')
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 admins = ['5328767896']
