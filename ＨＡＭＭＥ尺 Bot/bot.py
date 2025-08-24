@@ -229,7 +229,7 @@ async def handle_document(message: types.Message):
             ]
             final_message = "Check Results 📊\n━━━━━━━━━━━━━\n" + "\n".join(stats)
             
-            await bot.edit_message_text(final_message, message.chat.id, status_msg.message_id, parse_mode="HTML")
+            await bot.edit_message_text(final_message, str(message.chat.id), status_msg.message_id, parse_mode="HTML")
             reset_user_state(counters)
             
         except Exception as e:
